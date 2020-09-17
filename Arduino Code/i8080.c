@@ -1725,6 +1725,14 @@ int i8080_regs_sp(void) {
     return SP;
 }
 
+int i8080_regs_af(void) {
+    return A*256+F;
+}
+
+int i8080_regs_f(void) {
+    return F;
+}
+
 int i8080_regs_a(void) {
     return A;
 }
