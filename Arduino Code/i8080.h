@@ -36,6 +36,7 @@
 
 extern void i8080_init(void);
 extern int i8080_instruction(void);
+extern int i8080_instruction_machine_cycle(int address, int mcycle);
 
 extern void i8080_jump(int addr);
 extern int i8080_pc(void);
@@ -44,6 +45,7 @@ extern int i8080_regs_bc(void);
 extern int i8080_regs_de(void);
 extern int i8080_regs_hl(void);
 extern int i8080_regs_sp(void);
+extern int i8080_regs_af(void);
 
 extern int i8080_regs_a(void);
 extern int i8080_regs_b(void);
@@ -52,5 +54,6 @@ extern int i8080_regs_d(void);
 extern int i8080_regs_e(void);
 extern int i8080_regs_h(void);
 extern int i8080_regs_l(void);
+extern int i8080_regs_f(void);
 
 #endif
